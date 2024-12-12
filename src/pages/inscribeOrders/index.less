@@ -1,0 +1,71 @@
+.inscribeOrders {
+  max-width: 1280px;
+  margin: 20px auto;
+  padding: 0 15px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 24px;
+    color: #213027;
+    font-weight: 600;
+
+    .titleBottom {
+      width: 160px;
+      height: 4px;
+    }
+  }
+
+  .table-body-row {
+    display: flex;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #213027;
+    font-size: 14px;
+
+    .status {
+      .Pending, .Notpaid, .Minted {
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 2px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+      }
+
+      .Pending {
+        background-color: #7EFE19;
+      }
+
+      .Notpaid {
+        border: 1px solid #213027;
+      }
+
+      .Minted {
+        border: 1px solid #5AC804;
+        color: #5AC804;
+      }
+    }
+  }
+
+  .table-body-row > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .even {
+    background: #F6F6F6;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+
+

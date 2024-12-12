@@ -1,0 +1,209 @@
+.mint {
+  // width: 340px;
+  margin: 0 auto;
+
+  .mintInfo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    background: #F6F6F6;
+
+    &-tips {
+      padding: 24px 56px;
+      border-radius: 8px;
+      background: #EFF1F3;
+
+      color: #4F5153;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-show {
+      padding: 25px 40px 12px 20px;
+
+      &-row {
+        display: flex;
+        align-items: center;
+
+        .spanText {
+          color: #213027;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .line {
+          width: 1px;
+          height: 16px;
+          background-color: #AFB5B1;
+          margin: 0 5px;
+        }
+      }
+
+      .progress {
+
+      }
+
+
+    }
+  }
+
+  .inputInfo {
+    margin-top: 24px;
+    margin-bottom: 10px;
+
+    &-title {
+      color: #201E1B;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      margin-bottom: 8px;
+    }
+
+    &-info {
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #EFF1F3;
+
+      input {
+        padding: 0;
+      }
+    }
+  }
+
+  .slider {
+    margin-top: 30px;
+
+    &-title {
+      color: #213027;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .ant-input-number {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #EFF1F3;
+
+        input {
+          padding: 10px 12px;
+        }
+      }
+    }
+  }
+
+  .warningInfo {
+    display: flex;
+    margin: 24px 0;
+
+    .warning-icon {
+      width: 16px;
+      height: 14px;
+      margin-right: 8px;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .warning-text {
+      display: flex;
+      flex-direction: column;
+
+      color: #FF4848;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .nextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px;
+    border-radius: 8px;
+    background: #EFF1F3;
+    color: #AFB5B1;
+
+    color: #4F5153;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    cursor: pointer;
+  }
+
+  .permissible {
+    background: #7EFE19;
+    color: #213027;
+  }
+
+  .errorInfo {
+    // margin-top: 2px;
+    color: red;
+    // font-size: 14px;
+    // font-weight: 500;
+  }
+
+}
+
+@media screen and (max-width: 825px) {
+  .mint {
+    .mintInfo {
+      &-tips {
+        padding: 24px 16px;
+        font-size: 12px;
+      }
+    }
+
+    .inputInfo {
+      margin-top: 16px;
+
+      &-title {
+        font-size: 12px;
+      }
+
+      &-info {
+        padding: 12px 16px;
+      }
+    }
+
+    .slider {
+      margin-top: 16px;
+
+      &-title {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+    }
+
+    .warningInfo {
+      margin-top: 16px;
+
+      .warning-text {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .nextButton {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

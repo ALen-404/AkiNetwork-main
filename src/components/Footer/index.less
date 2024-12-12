@@ -1,0 +1,115 @@
+.footerBox {
+  width: 100%;
+  overflow: hidden;
+  height: 140px;
+  background-color: #201E1B;
+  box-sizing: border-box;
+
+  padding: 32px 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .akiLogoContext {
+
+    img {
+      width: 142px;
+    }
+
+    .akiText {
+      margin-top: 16px;
+
+      color: #FFF;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 171.429%;
+    }
+  }
+
+  .mediaContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+
+
+    .mediaListBox {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+
+      img {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+      }
+    }
+
+    .filingInfo {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.telegramTarget {
+  border-radius: 4px;
+  background: #FFD540;
+  
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 1px 4px;
+}
+
+.telegramText {
+  margin-left: 4px;
+  
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (max-width: 825px) {
+  .footerBox {
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+
+    .akiLogoContext {
+      display: block;
+      .akiText {
+        font-size: 12px;
+        margin-top: 16px;
+      }
+    }
+
+    .mediaContent {
+      margin-top: 32px;
+      display: block;
+
+      .filingInfo {
+        margin-top: 32px;
+        font-size: 12px;
+      }
+    }
+    
+  }
+}

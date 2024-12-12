@@ -1,0 +1,72 @@
+.SearchHeader {
+  flex: 1;
+  position: relative;
+
+  .header-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(239, 241, 243, 0.20);
+
+    &:hover {
+      border-color: #FFFFFF;
+    }
+
+    input {
+      &::placeholder {
+        color: rgba(209, 212, 214, 0.50);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  .popoverStyle {
+    width: 100%;
+
+    .ant-popover-content {
+      transform: translateY(12px) !important;
+    }
+  }
+
+  .searchContent {
+    .brc20 {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #606266;
+      font-weight: 600;
+
+      .brc20Icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+
+    .brc20Content {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      .tickName {
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #c1c1c1;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+

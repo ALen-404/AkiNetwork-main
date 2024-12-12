@@ -1,0 +1,393 @@
+.tickPage {
+  max-width: 1280px;
+  margin: auto;
+  padding: 78px 0 120px;
+
+  .brc20Top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .brc20TopContent {
+
+      .brc20Top-top {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .brc20Top-text {
+          color: #201E1B;
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+
+        .tickHeaderRight {
+          display: flex;
+          align-items: center;
+  
+          .mintBtn {
+            padding: 4px 15px;
+            border-radius: 2px;
+            background: #7EFE19;
+            color: #213027;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+  
+          .completed {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #26E339;
+            background: rgba(38, 227, 57, 0.10);
+
+            color: #26E339;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .tick-header-row {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+  
+        .tickHeaderLeft {
+          display: flex;
+          align-items: center;
+  
+          .tick-name {
+            display: flex;
+            align-items: center;
+  
+            .spanText {
+              color: #201E1B;
+              font-family: Inter;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+  
+            .line {
+              width: 1px;
+              height: 12px;
+              background-color: #D9D9D9;
+              margin: 0 12px;
+            }
+          }
+  
+          .watchListBtn {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            padding: 8px 15px;
+            background-color: #7EFE19;
+            border-radius: 2px;
+            cursor: pointer;
+  
+            .watchListText {
+              margin-left: 10px;
+              font-size: 14px;
+              color: #213027;
+              font-weight: 500;
+            }
+          }
+  
+          .tickNumber {
+            margin-left: 100px;
+            display: flex;
+            align-items: flex-end;
+  
+            &-amount {
+              color: #213027;
+              font-weight: 600;
+              font-size: 36px;
+            }
+  
+            &-percent {
+              margin-left: 10px;
+              margin-bottom: 6px;
+              color: #FF912F;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+  
+        }
+  
+      }
+    }
+  }
+
+  .tick-header {
+    margin-top: 24px;
+
+    .tick-header-info {
+      display: flex;
+      align-items: center;
+      // margin-top: 15px;
+      flex-wrap: wrap;
+
+      .row {
+        margin-right: 32px;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        .title {
+          color: #979A9D;
+        }
+
+        .value {
+          margin-left: 8px;
+          color: #201E1B;
+        }
+      }
+
+      .row:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+  .tick-body {
+    display: flex;
+    margin-top: 40px;
+
+    .tick-body-left {
+      .title {
+        display: flex;
+        flex-direction: column;
+        color: #201E1B;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+
+      .tickInfo {
+        margin-top: 24px;
+        border-radius: 16px;
+        border: 1px solid #EFF1F3;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+        width: 320px;
+
+        .tickInfo-row {
+          padding: 16px 24px;
+          border-bottom: 1px solid #EFF1F3;
+
+          .title {
+            margin-bottom: 12px;
+
+            color: #979A9D;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          .value {
+            color: #201E1B;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            .tips {
+              margin-left: 10px;
+              color: #FF912F;
+              font-size: 14px;
+            }
+          }
+        }
+
+        // .tickInfo-row:last-child {
+        //   padding-bottom: 20px;
+        //   border-bottom: none;
+        // }
+      }
+    }
+
+    .tick-body-right {
+      flex: 1;
+      margin-left: 24px;
+
+      .tick-tab {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+
+        .left {
+          display: flex;
+          align-items: center;
+
+          .title {
+            color: #213027;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      &-table {
+        margin-top: 24px;
+        // border-radius: 4px;
+        // border: 1px solid rgba(0, 0, 0, 0.05);
+        // background: #fff;
+
+        .table-header {
+          display: flex;
+          align-items: center;
+          padding: 28px 0;
+          text-align: center;
+
+          border-bottom: 1px solid #EFF1F3;
+
+          .headerText {
+            width: calc(100% / 4);
+            display: flex;
+            justify-content: center;
+            
+            color: #979A9D;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        .table-body {
+          // height: 550px;
+          // overflow: auto;
+
+          &-row {
+            display: flex;
+            align-items: center;
+            padding: 28px 0;
+            border-bottom: 1px solid #EFF1F3;
+
+            &:hover {
+              background: rgba(255, 213, 64, 0.05);
+            }
+          }
+
+          &-row > div {
+            width: calc(100% / 4);
+            display: flex;
+            justify-content: center;
+            
+            color: #201E1B;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            word-break: break-all;
+            margin: 0 5px;
+          }
+
+          // .even {
+          //   background: #F6F6F6;
+          // }
+        }
+
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 32px;
+    
+        .ant-pagination-prev, .ant-pagination-next {
+          border-radius: 4px;
+          border: 1px solid #EFF1F3;
+        }
+    
+        .ant-pagination-disabled {
+          border: none;
+          background-color: #EFF1F3;
+        }
+    
+        .ant-pagination-item {
+          border-radius: 4px;
+          border: 1px solid #EFF1F3;
+    
+          a {
+            color: #201E1B;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+          }
+        }
+    
+        .ant-pagination-item-active {
+          border: none;
+          background: linear-gradient(180deg, #FFDB5C 0%, #FFC700 100%);
+        }
+    
+        .ant-pagination-options-quick-jumper {
+          color: #201E1B;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .tickPage {
+    .tick-body {
+      flex-direction: column;
+
+      .tick-body-left {
+
+        .tickInfo {
+          width: 100%;
+        }
+      }
+
+      .tick-body-right {
+        margin-left: 0;
+
+        &-table {
+          width: 100%;
+          overflow: auto;
+
+          .tableContent {
+            min-width: 800px;
+          }
+        }
+      }
+    }
+  }
+}

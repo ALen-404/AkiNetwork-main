@@ -1,0 +1,5 @@
+{
+  "BackEndURL": "https://bit.akiprotocol.io/btcorder/v1",
+  "HttpURL": "https://bit.akiprotocol.io/ordinals/ordinals/v1",
+  "ApiHiro": "https://api.hiro.so/ordinals/v1"
+}

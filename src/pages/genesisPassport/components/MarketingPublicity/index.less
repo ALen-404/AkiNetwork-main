@@ -1,0 +1,279 @@
+.indexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 680px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    background-color: #201E1B;
+    background-image: url('@/assets/genesisPassport/indexBoxBgLine.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 600vw;
+    height: 600vw;
+    border-radius: 50%;
+  }
+
+  .indexBoxLeft {
+    .titleBox {
+      position: relative;
+
+      div {
+        position: relative;
+
+        .logo {
+          display: flex;
+          width: 240px;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          flex-shrink: 0;
+        }
+
+        .subTitle {
+          margin-top: 14px;
+          color: #FFF;
+          font-family: Poppins;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.25;
+        }
+      }
+
+      // .bgOval {
+      //   position: absolute;
+      //   left: 140px;
+      //   top: 110px;
+      //   z-index: 0;
+
+      //   width: 419px;
+      //   height: 106px;
+      //   transform: rotate(-7deg);
+      //   flex-shrink: 0;
+
+      //   border-radius: 50%;
+      //   border: 2px solid #C4FF72;
+      // }
+    }
+
+    .subTitleBox {
+      margin-top: 30px;
+      position: relative;
+      
+      .content {
+        margin-bottom: 14px;
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        color: #201E1B;
+
+        background: linear-gradient(90deg, #FFDB5C 11.88%, #FFC700 93.44%);
+        overflow-y: hidden;
+        height: 72px;
+        padding: 0 10px;
+
+        div {
+          line-height: 1.5;
+          animation: textMove 12s infinite;
+        }
+      }
+
+      .subTitleText {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 900;
+
+        background-image: url('@/assets/genesisPassport/indexBoxLine.svg');
+        background-repeat: no-repeat;
+        background-position: top left;
+      }
+    }
+
+    .describeBox {
+      margin-top: 40px;
+
+      color: #213027;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5;
+      opacity: 0.6;
+
+      div > span {
+        font-weight: 700;
+      }
+    }
+
+
+    // .emailBox {
+    //   margin-top: 38px;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: flex-start;
+    //   gap: 25px;
+
+    //   input {
+    //     box-sizing: border-box;
+    //     display: flex;
+    //     width: 329px;
+    //     height: 60px;
+    //     padding: 16px 24px;
+    //     align-items: center;
+    //     gap: 8px;
+    //     flex-shrink: 0;
+    //     border-radius: 12px;
+    //     border: 1px solid rgba(0, 0, 0, 0.10);
+    //     background: var(--White, #FFF);
+
+    //     ::placeholder {
+    //       color: rgba(0, 0, 0, 0.25);
+    //       font-family: "PingFang SC";
+    //       font-size: 14px;
+    //       font-style: normal;
+    //       font-weight: 500;
+    //       line-height: 150%; /* 21px */
+    //       text-transform: capitalize;
+    //     }
+    //   }
+
+    //   button {
+    //     display: flex;
+    //     width: 295px;
+    //     height: 60px;
+    //     padding: 15px 0;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 10px;
+    //     flex-shrink: 0;
+    //     border-radius: 12px;
+    //     border: 2px solid #CBC685;
+    //     background: linear-gradient(210deg, #F8DC79 -21.39%, #EECF63 28.85%, #FFF5D0 51.5%, #E6C656 69.19%, #F8DC79 120.14%);
+    //     color: var(--White, #FFF);
+    //     text-shadow: 0px 4px 9.8px #000;
+    //     font-family: Inter;
+    //     font-size: 24px;
+    //     font-style: normal;
+    //     font-weight: 700;
+    //     line-height: normal;
+    //     cursor: pointer;
+    //   }
+    // }
+  }
+
+  .indexBoxRight {
+    .img {
+      width: 460px;
+      flex-shrink: 0;
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .indexBox {
+    flex-direction: column;
+    gap: 33px;
+
+    .indexBoxLeft {
+      .titleBox {
+        div {
+          .logo {
+            max-width: 138px;
+          }
+
+          .subTitle {
+            font-size: 38px;
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .subTitleBox {
+        margin-top: 9px;
+
+        .content {
+          margin-bottom: 8px;
+          height: 30px;
+          font-size: 16px;
+          padding: 3px 6px;
+        }
+
+        .subTitleText {
+          padding-top: 12px;
+          font-size: 24px;
+          background-size: 22%;
+        }
+      }
+
+      .describeBox {
+        font-size: 14px;
+      }
+
+      .emailBox {
+        margin-top: 20px;
+        flex-direction: column;
+  
+        input {
+          width: 100%;
+          padding: 8px 12px;
+          border-radius: 6px;
+          height: 40px;
+        }
+
+        button {
+          width: 100%;
+          height: 50px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .indexBoxRight {
+      margin-top: 20px;
+      video {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes textMove {
+  0% {
+    transform: translateY(0);
+  }
+
+  28% {
+    transform: translateY(0%);
+  }
+
+  33% {
+    transform: translateY(-25%);
+  }
+
+  61% {
+    transform: translateY(-25%);
+  }
+
+  66% {
+    transform: translateY(-50%);
+  }
+
+  95% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(-75%);
+  }
+}

@@ -1,0 +1,181 @@
+.homePage {
+  position: relative;
+
+  .discover {
+    max-width: 1280px;
+    margin: auto;
+    padding: 80px 0;
+  }
+
+  .hoverBox {
+    position: fixed;
+    top: 94px;
+    left: 20px;
+    width: 194px;
+
+    .hoverImg {
+      width: 100%;
+    }
+
+    .hoverContent {
+      position: relative;
+      margin-top: -3px;
+
+      .hoverBlock {
+        width: 100%;
+        border: 2px solid #EBEBEB;
+        border-radius: 2px;
+        background-color: #fff;
+
+        .hoverTitle {
+          font-size: 12px;
+          font-weight: 600;
+          color: #213027;
+          margin: 16px 16px 0 16px;
+        }
+
+        .hoverList {
+          cursor: pointer;
+
+          .listRow {
+            display: flex;
+            align-items: center;
+            margin: 12px 16px 0 16px;
+            color: #000;
+            font-size: 12px;
+            font-weight: 400;
+
+            .listIcon {
+              width: 16px;
+              height: 16px;
+              margin-right: 8px;
+            }
+          }
+        }
+
+        .hoverBottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 16px 12px;
+          border-radius: 0 0 2px 2px;
+          margin-top: 16px;
+          background-color: #F6F6F6;
+
+          .subscribe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-radius: 2px;
+            background-color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            color: #213027;
+            cursor: pointer;
+          }
+
+          .explore {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 500;
+            color: #213027;
+            cursor: pointer;
+
+            .exploreIcon {
+              width: 12px;
+              height: 12px;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+
+      .hoverBlock::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 82%;
+        transform: translateX(-50%);
+        border-left: 0px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid #EBEBEB;
+        border-top: 10px solid transparent;
+      }
+    }
+
+  }
+
+  .littleHover {
+    position: fixed;
+    top: 170px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 44px 44px 0px;
+    background: #F6F6F6;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+
+    .hoverArrowRow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .hoverArrow {
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+      }
+
+      .hidden {
+        transform: rotate(-180deg);
+      }
+    }
+
+
+    .hoverIcon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1420px) {
+  .homePage {
+
+    .hoverBox {
+      top: 120px;
+    }
+
+    .littleHover {
+      top: 190px;
+      width: 32px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+
+      .hoverArrowRow {
+        padding: 8px;
+        border-radius: 16px;
+        background: #fff;
+
+        .hoverArrow {
+          width: 8px;
+          height: 8px;
+          margin-right: 0;
+        }
+      }
+
+      .hoverIcon {
+        display: none;
+      }
+    }
+  }
+}
+

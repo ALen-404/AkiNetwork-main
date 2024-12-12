@@ -1,0 +1,317 @@
+.inscribeNext {
+  max-width: 1280px;
+  margin: 40px auto;
+
+  .backRow {
+    display: flex;
+    align-items: center;
+
+    .back {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .backText {
+        margin-left: 15px;
+        color: #213027;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+
+  }
+
+  .itemBlock {
+    margin-top: 20px;
+
+    &-title {
+      display: flex;
+      align-items: center;
+
+      &-text {
+        color: #213027;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      &-tips {
+        color: #AFB5B1;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+
+    &-body {
+      margin-top: 10px;
+      flex: 1;
+      padding: 15px;
+      border-radius: 2px;
+      background-color: #F6F6F6;
+      min-height: 90px;
+      max-height: 200px;
+      overflow: auto;
+
+      &-item {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        color: #213027;
+        font-size: 14px;
+        font-weight: 500;
+
+        .itemBlock-body-item-index {
+          color: #FF912F;
+          font-size: 16px;
+          font-weight: 600;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .receive {
+    margin-top: 20px;
+
+    &-title {
+      margin-bottom: 10px;
+      color: #213027;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &-Input {
+      padding: 15px;
+      border-radius: 2px;
+      background-color: #F6F6F6;
+    }
+  }
+
+  .feeRate {
+    margin-top: 20px;
+
+    &-title {
+      margin-bottom: 10px;
+      color: #213027;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &-body {
+      display: flex;
+      justify-content: space-between;
+
+      &-left {
+        width: 45%;
+        margin-right: 25px;
+
+        .feeBlock {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #F6F6F6;
+          border-radius: 2px;
+          margin-bottom: 10px;
+          padding: 24px 15px;
+          cursor: pointer;
+
+          .feeBlockLeft {
+            display: flex;
+            align-items: center;
+
+            .leftText {
+              margin-left: 20px;
+              color: #213027;
+
+              .value {
+                font-size: 24px;
+                font-weight: 600;
+              }
+
+              .unit {
+                margin-left: 5px;
+                font-size: 20px;
+                font-weight: 500;
+              }
+            }
+
+          }
+
+          .feeBlockRight {
+            color: #213027;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+
+        .feeBlockActive {
+          background: linear-gradient(250deg, #7EFE19 9.12%, #7DBC73 192.53%);
+        }
+      }
+
+      &-right {
+        flex: 1;
+        background-color: #F6F6F6;
+        border-radius: 2px;
+        padding: 25px;
+
+        .tips {
+          display: flex;
+          align-items: center;
+          border-radius: 2px;
+          background-color: rgba(0, 0, 0, 0.05);
+          padding: 10px;
+
+          .tipsText {
+            margin-left: 5px;
+            color: #213027;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+
+        .feeBox {
+          display: flex;
+          flex-direction: column;
+          border-bottom: .5px solid rgba(0, 0, 0, 0.05);
+          padding: 25px 0 5px 0;
+
+
+          .feeBox-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .left {
+              display: flex;
+              align-items: center;
+
+              .leftTitle {
+                font-size: 16px;
+                color: #213027;
+                font-weight: 500;
+              }
+
+              .custom {
+                margin-left: 10px;
+                padding: 3px 12px;
+                background-color: rgba(0, 0, 0, 0.05);
+                border-radius: 2px;
+
+                .customText {
+                  color: #213027;
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+
+                .customTips {
+                  color: #FF912F;
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+              }
+            }
+
+            .right {
+              display: flex;
+              align-items: center;
+
+              .stas {
+                color: #213027;
+                font-size: 16px;
+                font-weight: 600;
+              }
+
+              .dollar {
+                min-width: 52px;
+                margin-left: 15px;
+                color: #AFB5B1;
+                font-size: 16px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+
+        .total {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 25px 0;
+
+          .totalText {
+            font-size: 16px;
+            color: #213027;
+            font-weight: 500;
+          }
+
+          .right {
+            display: flex;
+            align-items: center;
+
+            .stas {
+              color: #FF912F;
+              font-size: 24px;
+              font-weight: 600;
+            }
+
+            .dollar {
+              min-width: 52px;
+              margin-left: 15px;
+              color: #AFB5B1;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .submitBtn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+          background-color: #7EFE19;
+          border-radius: 2px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #213027;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .inscribeNext {
+    margin: 20px auto;
+
+    .receive {
+      &-Input {
+        padding: 10px;
+      }
+    }
+
+    .feeRate {
+      &-body {
+        flex-direction: column;
+
+        &-left {
+          width: 100%;
+          margin-right: 0;
+
+          .feeBlock {
+            padding: 15px 12px;
+          }
+        }
+
+        &-right {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
+
+

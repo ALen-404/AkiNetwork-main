@@ -1,0 +1,37 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 8px;
+  background: #EFF1F3;
+
+  .tabItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    color: #201E1B;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    cursor: pointer;
+  }
+
+  .activeTabItem {
+    background: #FFF;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .tabs {
+    .tabItem {
+      padding: 4px 10px;
+    }
+  }
+}

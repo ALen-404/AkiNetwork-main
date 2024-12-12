@@ -1,0 +1,117 @@
+.akiBitBox {
+  .title {
+    margin: 0 auto;
+  }
+  
+  .akiBitBoxRow {
+    margin-top: 64px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 25px;
+
+    .akiBitBoxCell {
+      display: flex;
+      max-width: 400px;
+      padding: 40px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+
+      border-radius: 16px;
+      border: 1px solid #EFF1F3;
+      background: #FFF;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+
+      opacity: 0;
+
+      .logo {
+        width: 72px;
+      }
+
+      .cardTitle {
+        color: #201E1B;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+
+      .content {
+        color: #4F5153;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 155.556%;
+        text-transform: capitalize;
+      }
+    }
+
+    .akiBitBoxCell:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .akiBitBoxCell:nth-child(3) {
+      animation-delay: 1s;
+    }
+  }
+
+  .fadeInButton {
+    animation: fadeInButton 2s forwards;
+  }
+}
+
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// @media screen and (max-width: 1280px) {
+//   .genesisPassportContent {
+//     .genesisPassport {
+//       padding: 0 30px;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 825px) {
+  .akiBitBox {
+    .akiBitBoxRow {
+      flex-direction: column;
+      margin-top: 18px;
+      gap: 16px;
+
+      .akiBitBoxCell {
+        width: 100%;
+        padding: 16px;
+        gap: 12px;
+
+        .logo {
+          width: 48px;
+        }
+
+        .cardTitle {
+          font-size: 18px;
+        }
+
+        .content {
+          font-size: 14px;
+        }
+      }
+
+      .akiBitBoxCell:nth-child(2), .akiBitBoxCell:nth-child(3) {
+        animation-delay: 0s;
+      }
+    }
+  }
+}

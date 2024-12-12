@@ -1,0 +1,98 @@
+.deploy {
+  // width: 340px;
+  // margin: 0 auto;
+
+  .inputInfo {
+    margin-top: 24px;
+    margin-bottom: 10px;
+
+    &-title {
+      color: #201E1B;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      margin-bottom: 8px;
+    }
+
+    &-info {
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #EFF1F3;
+
+      input {
+        padding: 0;
+      }
+    }
+  }
+  .inputInfo:first-child{
+    margin-top: 0;
+  }
+
+  .nextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px;
+    border-radius: 8px;
+    background: #EFF1F3;
+    color: #AFB5B1;
+    margin-top: 24px;
+
+    color: #4F5153;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    cursor: pointer;
+  }
+
+  .permissible {
+    background: #7EFE19;
+    color: #213027;
+  }
+
+  .errorInfo {
+    color: red;
+  }
+
+}
+
+@media screen and (max-width: 825px) {
+  .deploy {
+
+    .inputInfo {
+      margin-top: 16px;
+
+      &-title {
+        font-size: 12px;
+      }
+
+      &-info {
+        padding: 12px 16px;
+      }
+    }
+
+    .inputInfo:first-child{
+      margin-top: 0;
+    }
+
+    .warningInfo {
+      margin-top: 16px;
+
+      .warning-text {
+        font-size: 10px;
+      }
+    }
+
+    .nextButton {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+}

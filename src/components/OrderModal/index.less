@@ -1,0 +1,177 @@
+.model {
+  max-width: 620px;
+  margin: 0 auto;
+
+  .countdown {
+    text-align: center;
+    color: #213027;
+    font-size: 16px;
+    font-weight: 500;
+
+    .time {
+      margin-left: 5px;
+      color: #FF912F;
+    }
+  }
+
+  .countdownImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 20px 0;
+  }
+
+  .orderInfo {
+    padding-bottom: 15px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .title {
+        color: #213027;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .value {
+        color: #213027;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .btc {
+        font-size: 24px;
+        color: #213027;
+        font-weight: 600;
+
+        .stas {
+          margin-left: 5px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .payWallet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    max-width: 350px;
+    border-radius: 2px;
+    background-color: #7EFE19;
+    color: #213027;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+
+  .fileBlock {
+    padding: 18px;
+    background-color: #F6F6F6;
+    border-radius: 2px;
+    min-height: 60px;
+
+    .fileText {
+      color: #92949D;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .fileRow {
+      max-height: 140px;
+      overflow: auto;
+
+      .itemRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .itemRow-left {
+          display: flex;
+          align-items: center;
+          padding-top: 10px;
+
+          .text {
+            margin-left: 5px;
+            color: #213027;
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+
+        .itemRow-right {
+          color: #213027;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .orderBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+
+    .orderCreate {
+      color: #213027;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .closeButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 15px;
+      background-color: #213027;
+      border-radius: 2px;
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (max-width: 825px) {
+  .model {
+    .countdown {
+
+    }
+
+    .countdownImg {
+      margin: 10px 0;
+    }
+
+    .orderInfo {
+      padding-bottom: 0;
+
+      .row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .title {
+          color: #AFB5B1;
+        }
+      }
+    }
+
+    .payWallet {
+      margin: 10px auto;
+    }
+
+    .orderBottom {
+      margin-top: 10px;
+    }
+  }
+}

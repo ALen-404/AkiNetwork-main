@@ -1,0 +1,174 @@
+.index {
+  max-width: 1280px;
+  margin: auto;
+  padding: 80px 0;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    background-image: url('@/assets/genesisPassport/indexBoxBgLine.png');
+    background-color: #201E1B;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100vw;
+    height: 160px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  
+
+  &-header {
+    position: relative;
+    padding-top: 36px;
+
+    .header-top {
+      // display: flex;
+
+      .brc20Img {
+        width: 88px;
+        height: 88px;
+      }
+    }
+
+    .header-bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .header-left {
+        margin-top: 16px;
+        // margin-left: 20px;
+  
+        .title {
+          color: #201E1B;
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+  
+        .tips {
+          margin-top: 8px;
+  
+          color: #201E1B;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+  
+          max-width: 515px;
+        }
+  
+      }
+  
+      .brc20Info {
+        // margin-left: 100px;
+        // margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+  
+        .infoBlock {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          .info-title {
+            color: #979A9D;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+  
+          .info-value {
+            margin-top: 8px;
+
+            color: #000;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+          }
+        }
+
+        .infoLine {
+          width: 1px;
+          height: 24px;
+          flex-shrink: 0;
+          background: #EFF1F3;
+          margin: 0 32px;
+        }
+      }
+    }
+
+    
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .index {
+    padding: 40px 16px;
+
+    &::before {
+      height: 72px;
+      background-size: cover;
+    }
+
+    &-header {
+      padding-top: 4px;
+
+      .header-top {
+        .brc20Img {
+          width: 58px;
+          height: 58px;
+        }
+      }
+    }
+
+    .header-bottom {
+      flex-direction: column;
+      gap: 16px;
+
+      .header-left {
+        margin-top: 8px;
+
+        .title {
+          font-size: 24px;
+        }
+        
+        .tips {
+          font-size: 12px;
+        }
+      }
+
+      .brc20Info {
+        width: 100%;
+        justify-content: space-between;
+
+        .infoBlock {
+          padding: 0;
+
+          .info-title {
+            font-size: 12px;
+          }
+
+          .info-value {
+            font-size: 20px;
+          }
+        }
+
+        .infoLine {
+          margin: 0;
+        }
+      }
+      
+    }
+  }
+}
